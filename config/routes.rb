@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'test#index'
+
+  post '/update' => 'trace#update'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

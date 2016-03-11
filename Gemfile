@@ -26,6 +26,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # 12Factor rails for heroku...
 gem 'rails_12factor', group: :production
 
+# AWS DEPLOYMENT
+gem 'figaro'
+gem 'puma'
+group :development do
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

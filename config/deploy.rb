@@ -1,12 +1,13 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'my_app_name'
+set :application, 'weasley_clock'
 set :repo_url, 'git@github.com:myerspa/weasley_clock.git'
 set :branch, :master
 set :deploy_to, '/home/deploy/weasley_clock'
 set :pty, true
-set :linked_files, %w{config/database.yml,config/application.yml}
+
+set :linked_files, %w{config/database.yml config/application.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :keep_releases, 5
 set :rvm_type, :user
